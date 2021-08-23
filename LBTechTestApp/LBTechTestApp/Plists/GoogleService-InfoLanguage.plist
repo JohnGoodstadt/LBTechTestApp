@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>773493875087-kir4k6686rdsctocqlhlfipk2c3pakjt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.773493875087-kir4k6686rdsctocqlhlfipk2c3pakjt</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>773493875087-c7aqegtfi254cu11nhhsuv55p9vq08df.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD3iprplY2PmF_0sHD_Xi0mI1WjTs0Pn9A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>773493875087</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.johngoodstadt.memorize.language</string>
+	<key>PROJECT_ID</key>
+	<string>memorize-language</string>
+	<key>STORAGE_BUCKET</key>
+	<string>memorize-language.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:773493875087:ios:cabdda79cf73faf4046bfa</string>
+	<key>DATABASE_URL</key>
+	<string>https://memorize-language.firebaseio.com</string>
+</dict>
+</plist>

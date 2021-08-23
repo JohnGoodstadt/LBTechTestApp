@@ -1,0 +1,30 @@
+/* 
+  lbtechtest.strings
+  memorize
+
+  Created by John goodstadt on 17/05/2020.
+  Copyright © 2020 John Goodstadt. All rights reserved.
+*/
+
+/*
+"" = "";
+*/
+
+"Add something to remember" = "Add a word to pronounce";
+
+/*
+ general
+ */
+"AppTitle" = "Lloyds Bank Tech Test";
+"word" = "word";
+"words" = "words";
+
+/* all strings to have 3 variations */
+"grouptype0singular" = "word";
+"grouptype0plural" = "words";
+"grouptype1singular" = "group";
+"grouptype1plural" = "groups";
+"grouptype2singular" = "word";
+"grouptype2plural" = "words";
+"grouptype3singular" = "word";
+"grouptype3plural" = "words";

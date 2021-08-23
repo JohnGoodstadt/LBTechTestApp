@@ -1,0 +1,8 @@
+{
+	"target" : "lbtechtest",
+	"languageApp" : true,
+	"stringsfile" : "lbtechtest",
+	"audioapp" : true,
+	"readsamplesfrombundleonload" : false,
+	"sortbystrippingaccents" : false
+}
