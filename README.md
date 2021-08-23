@@ -7,7 +7,7 @@ Prepare for these step by opening the Unicorn Project in XCode.
 
 ## Download and run App
 
-1.  https://github.com/JohnGoodstadt/memorizeBusinessAndroid 
+1.  https://github.com/JohnGoodstadt/LBTechTestApp 
 
 
 
