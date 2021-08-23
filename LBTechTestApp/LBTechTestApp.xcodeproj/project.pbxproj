@@ -26,7 +26,6 @@
 		75F41AA426D2A0270031410C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F41AA326D2A0270031410C /* Constants.swift */; };
 		75F41AA626D2A0840031410C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F41AA526D2A0840031410C /* Extensions.swift */; };
 		75F41AAE26D2B0E90031410C /* LBRecallItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F41AAD26D2B0E90031410C /* LBRecallItemTests.swift */; };
-		75F41AB026D2B9E80031410C /* cachedsamples.json in Resources */ = {isa = PBXBuildFile; fileRef = 75F41AAF26D2B9E80031410C /* cachedsamples.json */; };
 		75F41AB226D2C5440031410C /* ViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F41AB126D2C5440031410C /* ViewControllerDataSource.swift */; };
 		75F41AB526D2C6A90031410C /* GroupSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F41AB426D2C6A90031410C /* GroupSummaryTableViewCell.swift */; };
 		75F41AB726D2CFAD0031410C /* SortLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F41AB626D2CFAD0031410C /* SortLibrary.swift */; };
@@ -81,6 +80,7 @@
 		75F41B2526D38EB50031410C /* AudioDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F41B2426D38EB50031410C /* AudioDocument.swift */; };
 		75F41B2726D390A30031410C /* LibraryFilesystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F41B2626D390A30031410C /* LibraryFilesystem.swift */; };
 		75F41B2926D39ED30031410C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 75F41B2826D39ED30031410C /* README.md */; };
+		75F41B3226D3C9930031410C /* cachedsamples.json in Resources */ = {isa = PBXBuildFile; fileRef = 75F41B2F26D3C9930031410C /* cachedsamples.json */; };
 		7F33978A21348CDD3B30ADB1 /* Pods_LBTechTestApp_LBTechTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3424D1D400DC8EBEC13ACD /* Pods_LBTechTestApp_LBTechTestAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -154,7 +154,6 @@
 		75F41AA326D2A0270031410C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		75F41AA526D2A0840031410C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		75F41AAD26D2B0E90031410C /* LBRecallItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBRecallItemTests.swift; sourceTree = "<group>"; };
-		75F41AAF26D2B9E80031410C /* cachedsamples.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cachedsamples.json; path = ../../../../../../../mobile_assets/memorize/Language/cachedsamples/ios/cachedsamples.json; sourceTree = "<group>"; };
 		75F41AB126D2C5440031410C /* ViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDataSource.swift; sourceTree = "<group>"; };
 		75F41AB426D2C6A90031410C /* GroupSummaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupSummaryTableViewCell.swift; sourceTree = "<group>"; };
 		75F41AB626D2CFAD0031410C /* SortLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortLibrary.swift; sourceTree = "<group>"; };
@@ -209,6 +208,7 @@
 		75F41B2426D38EB50031410C /* AudioDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDocument.swift; sourceTree = "<group>"; };
 		75F41B2626D390A30031410C /* LibraryFilesystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFilesystem.swift; sourceTree = "<group>"; };
 		75F41B2826D39ED30031410C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		75F41B2F26D3C9930031410C /* cachedsamples.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cachedsamples.json; path = ../../../../../../../mobile_assets/memorize/Language/cachedsamples/ios/cachedsamples.json; sourceTree = "<group>"; };
 		78CC755CE3ECF4898D3535CE /* Pods_LBTechTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBTechTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AEA712392047CF491E05E52 /* Pods-LBTechTestApp-LBTechTestAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTechTestApp-LBTechTestAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-LBTechTestApp-LBTechTestAppUITests/Pods-LBTechTestApp-LBTechTestAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2859F119672B66C6CF83EF /* Pods-LBTechTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTechTestAppTests.debug.xcconfig"; path = "Target Support Files/Pods-LBTechTestAppTests/Pods-LBTechTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -370,7 +370,7 @@
 		75F41AAA26D2A27E0031410C /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				75F41AAF26D2B9E80031410C /* cachedsamples.json */,
+				75F41B2F26D3C9930031410C /* cachedsamples.json */,
 				75F41AE326D3014F0031410C /* 0B39BB7F-FA6B-4F5F-8310-F0C3333EC739.mp3 */,
 				75F41AE026D3014E0031410C /* 3C884601-9D7C-460D-9CE9-14BE5E76372C.mp3 */,
 				75F41ADD26D3014E0031410C /* 4A47EA9E-6EDD-42CF-BF25-F3003B9C80BA.mp3 */,
@@ -624,6 +624,7 @@
 				75F41AEF26D3014F0031410C /* 6C65C576-0523-4BFF-8EEB-52A86EAE925B.mp3 in Resources */,
 				75F41AFB26D3014F0031410C /* 7A5E1945-4D84-4093-975E-19752295B479.mp3 in Resources */,
 				75F41B0D26D3014F0031410C /* F380BA43-A4CF-4DCE-AD8C-113E9543B3EC.mp3 in Resources */,
+				75F41B3226D3C9930031410C /* cachedsamples.json in Resources */,
 				75F41AF726D3014F0031410C /* 5329C167-297A-4480-BE1E-2A10E9868BE2.mp3 in Resources */,
 				75F41AFA26D3014F0031410C /* CD6E3C6C-AB49-4160-AC8F-D907BCCFBDFC.mp3 in Resources */,
 				75F41B0026D3014F0031410C /* 77A61C5D-CD07-441B-AA6E-6DD6E658F8A2.mp3 in Resources */,
@@ -631,7 +632,6 @@
 				75F41A9C26D29BFE0031410C /* LBSettings.bundle in Resources */,
 				75F41AEC26D3014F0031410C /* AABD6298-AA4F-40E5-B1AC-EB81816D2468.mp3 in Resources */,
 				75F41AFD26D3014F0031410C /* 104E224B-210D-4226-82A0-936080850329.mp3 in Resources */,
-				75F41AB026D2B9E80031410C /* cachedsamples.json in Resources */,
 				75F41B0A26D3014F0031410C /* 252D8688-47F5-46F5-B080-96C532B7D72D.mp3 in Resources */,
 				75F41B1C26D37A9B0031410C /* lbtechtest.strings in Resources */,
 				75F41B0326D3014F0031410C /* CA1A1F3F-0E61-4767-9013-EC6BE4537A0C.mp3 in Resources */,
