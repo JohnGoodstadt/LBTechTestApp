@@ -2,7 +2,6 @@
 
 These instruction are for downloading and running the app  `LBTechTest` .
 
-Prepare for these step by opening the Unicorn Project in XCode.
 
 ## Download and run App
 
