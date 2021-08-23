@@ -3,6 +3,6 @@
 	"languageApp" : true,
 	"stringsfile" : "lbtechtest",
 	"audioapp" : true,
-	"readsamplesfrombundleonload" : false,
+	"readsamplesfrombundleonload" : true,
 	"sortbystrippingaccents" : false
 }

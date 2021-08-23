@@ -76,17 +76,21 @@ import LBEntities
 			return (items,groups)
 		}
 		
+		//For the Tech test only remove Chinese groups and items - mp3s not correct format
+		let groupsMutable = groups.filter{ $0.UID != "FFFF1CAE-4F41-4909-A842-9FA134BE8C76" }
+		let itemsMutable = items.filter{ $0.busDepotUID != "FFFF1CAE-4F41-4909-A842-9FA134BE8C76" }
+		
 		
 		//1. make lookup dict for performance
 		//2. for each item lookup group and assign
 		
-		print("\(Date()) read groups: \(groups.count) rows, items: \(items.count) rows")
+		print("\(Date()) read groups: \(groupsMutable.count) rows, items: \(itemsMutable.count) rows")
 		
-		let lookupDict = groups.toDictionary { $0.UID }
+		let lookupDict = groupsMutable.toDictionary { $0.UID }
 		
 		
 		//A points to B and B has a list of A's
-		for ri in items {
+		for ri in itemsMutable {
 
 			if ri.busDepotUID.isEmpty == false {
 				
@@ -101,7 +105,7 @@ import LBEntities
 
 		}
 		
-		return (items,groups)
+		return (itemsMutable,groupsMutable)
 		
 	}
 	

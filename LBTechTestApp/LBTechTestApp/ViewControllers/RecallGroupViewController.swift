@@ -46,7 +46,12 @@ class RecallGroupViewController: UIViewController, RecallGroupDataSourceDelegate
 	}
 	//MARK: UI IBActions
 	@IBAction func playNavButtonPressed(_ sender: Any) {
-		print("playNavButtonPressed")
+
+		
+		let alert = UIAlertController(title: "Not Yet Implemented", message: "If you ask nicely, it can be done.", preferredStyle: UIAlertController.Style.alert)
+			alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { action in
+		}))
+		self.present(alert, animated: true, completion: nil)
 	}
 	
 	//MARK: - delegate callbacks

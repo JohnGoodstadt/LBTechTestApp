@@ -178,7 +178,13 @@ class AudioViewController: UIViewController,AVAudioPlayerDelegate {
 			playFromData(ri.audio)
 		}
 	}
-	
+	internal func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer,error: Error?){
+		
+		let alert = UIAlertController(title: "This sound cannot be played", message: "Possible format error. Please try again later", preferredStyle: UIAlertController.Style.alert)
+			alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { action in
+		}))
+		self.present(alert, animated: true, completion: nil)
+	}
 	internal func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool){
 		
 		self.audioTimer.invalidate()
@@ -193,24 +199,27 @@ class AudioViewController: UIViewController,AVAudioPlayerDelegate {
 		playButton.setImage(UIImage(systemName: "pause.fill",withConfiguration: UIImage.SymbolConfiguration(weight: .heavy)), for: .normal)
 	}
 	fileprivate func prepareAudioFromFile(_ ri: RecallItem,numberOfLoops:Int = 0) {
-		let fileURL = Bundle.main.path(forResource: ri.UID, ofType: "mp3")!
 		
-		do{
+		if let fileURL = Bundle.main.path(forResource: ri.UID, ofType: "mp3") {
+			do{
 
-			audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
-			audioPlayer?.prepareToPlay()
-			audioPlayer?.currentTime = 0.0
-			audioPlayer?.delegate = self
-			
-			slider.maximumValue = Float(audioPlayer?.duration ?? 0.0)
-			slider.isContinuous = true
-			slider.minimumValue = 0.0
-			slider.setValue(0.0, animated: false)
-			
-			
-		}catch{
-			print(error)
+				audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+				audioPlayer?.prepareToPlay()
+				audioPlayer?.currentTime = 0.0
+				audioPlayer?.delegate = self
+				
+				slider.maximumValue = Float(audioPlayer?.duration ?? 0.0)
+				slider.isContinuous = true
+				slider.minimumValue = 0.0
+				slider.setValue(0.0, animated: false)
+				
+				
+			}catch{
+				print(error)
+			}
 		}
+		
+
 
 	}
 	fileprivate func prepareAudioFromData(_ audio: Data,numberOfLoops:Int = 0) {
@@ -236,26 +245,27 @@ class AudioViewController: UIViewController,AVAudioPlayerDelegate {
 	numberOfLoops: can be played 3 time or just once
 	*/
 	fileprivate func playFromFile(_ ri: RecallItem,numberOfLoops:Int = 0) {
-		let fileURL = Bundle.main.path(forResource: ri.UID, ofType: "mp3")!
+		//let fileURL = Bundle.main.path(forResource: ri.UID, ofType: "mp3")!
 		
-		do{
+		if let fileURL = Bundle.main.path(forResource: ri.UID, ofType: "mp3") {
+			do{
 
-			audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
-			audioPlayer?.prepareToPlay()
-			audioPlayer?.numberOfLoops = numberOfLoops
-			audioPlayer?.currentTime = 0.0
-			audioPlayer?.delegate = self
-			audioPlayer?.play()
-			
-			slider.maximumValue = Float(audioPlayer?.duration ?? 0.0)
-			slider.isContinuous = true
-			slider.minimumValue = 0.0
-			slider.setValue(0.0, animated: false)
-			
-		}catch{
-			print(error)
+				audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+				audioPlayer?.prepareToPlay()
+				audioPlayer?.numberOfLoops = numberOfLoops
+				audioPlayer?.currentTime = 0.0
+				audioPlayer?.delegate = self
+				audioPlayer?.play()
+				
+				slider.maximumValue = Float(audioPlayer?.duration ?? 0.0)
+				slider.isContinuous = true
+				slider.minimumValue = 0.0
+				slider.setValue(0.0, animated: false)
+				
+			}catch{
+				print(error)
+			}
 		}
-
 	}
 	/**
 	 `playFromData` use AVAudioPlayer to play from Data() from google db

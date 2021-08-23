@@ -5,7 +5,7 @@ These instruction are for downloading and running the app  `LBTechTest` .
 
 ## Download and run App
 
-1.  https://github.com/JohnGoodstadt/memorizeBusinessAndroid 
+1.  https://github.com/JohnGoodstadt/LBTechTestApp
 
 
 

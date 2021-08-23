@@ -64,6 +64,9 @@ class ViewControllerDataSource: NSObject, UITableViewDataSource,UITableViewDeleg
 		
 		cell.titleLabel.text = "\(childCount) \(groupType)"
 		cell.summaryTitleLabel.text = "\(rg.UID.prefix(4))"
+		cell.label1.text = ""
+		cell.label2.text = ""
+		cell.label3.text = ""
 		
 		//cell.photoImageView.setThumbnailForRow(rg.thumbnail)
 		if rg.thumbnail.isEmpty {
