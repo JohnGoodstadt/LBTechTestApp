@@ -1,5 +1,3 @@
-# LBTechTestApp
-iOS app for LB tech Test
 
 #  Lloyds Bank Tech Test
 
