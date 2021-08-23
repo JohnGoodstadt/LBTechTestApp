@@ -11,7 +11,7 @@ These instruction are for downloading and running the app  `LBTechTest` .
 
 
 2. Run pod install
-	in folder with xcodeproj run POD command `pod install` to install all external dependancies 
+	in folder with xcodeproj run in console POD command `pod install` to install all external dependancies 
 
 
 
@@ -39,10 +39,10 @@ These instruction are for downloading and running the app  `LBTechTest` .
 
 3. Maintainability
 	1. Strings file for adjusting any string on 1 place
-	2. Depend on interface not concrete object - see DataProvider.swift. This can easily be swopped out for, say, and Amazon backend, with no effect on the App.
+	2. Depend on interface not concrete object (dependency inversion principle) - see DataProvider.swift. This can easily be swopped out for, say, and Amazon backend, with no effect on the App.
 	3. AppSettings - configure json settings file to effect running. e.g. changing   `readsamplesfrombundleonload` to false will load from google.
 	4. Datasources are general enough to be reused by different ViewControllers, see  `ViewControllerDataSource` .
-	5. Helper functions have only 1 reason to change.
+	5. Helper functions have only 1 reason to change (single-responsibility principle).
 	6. Libraries hold similar code for an area - see  `LibraryFilesystem`  and   `SortLibrary` .
 	7. Use of Constants file - centralize constants in use see  `Constants.swift`  and  `FirebaseConstants.swift` 
 	8. Use of small Global area protected by a singleton design pattern - for App scoped data.
