@@ -18,12 +18,40 @@ class LBEntitiesTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-		XCTAssert(true)
+    func testGroup() throws {
+
+		let group = LBEntities.RecallGroup()
+		
+		XCTAssertFalse(group.hasChild,"default - no children")
+		XCTAssertTrue(group.groupUIDList.isEmpty,"default - no child UIDs")
+		XCTAssert(group.UID.count > 0,"assigned uuid")
     }
 
+	func testItem() throws {
+		
+		let item = LBEntities.RecallItem()
+	
+		
+		XCTAssert(item.UID.count > 0,"assigned uuid")
+	}
+	
+	func testJoinItemToGroup(){
+		
+		let group = LBEntities.RecallGroup()
+		group.title = "g1"
+		
+		let item = LBEntities.RecallItem()
+		item.title = "i1"
+		
+		group.addItem(item)
+		
+		XCTAssertEqual(1,group.itemList.count,"1 item in this group")
+		
+	}
+	
+	/*
+	Other tests to follow
+	*/
 
 }
 

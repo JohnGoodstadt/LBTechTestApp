@@ -81,6 +81,7 @@
 		75F41B2726D390A30031410C /* LibraryFilesystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F41B2626D390A30031410C /* LibraryFilesystem.swift */; };
 		75F41B2926D39ED30031410C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 75F41B2826D39ED30031410C /* README.md */; };
 		75F41B4826D3D8770031410C /* cachedsamples.json in Resources */ = {isa = PBXBuildFile; fileRef = 75F41B4726D3D8770031410C /* cachedsamples.json */; };
+		75F41B5326D3DE930031410C /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F41B5026D3DE930031410C /* Queue.swift */; };
 		7F33978A21348CDD3B30ADB1 /* Pods_LBTechTestApp_LBTechTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3424D1D400DC8EBEC13ACD /* Pods_LBTechTestApp_LBTechTestAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -209,6 +210,7 @@
 		75F41B2626D390A30031410C /* LibraryFilesystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFilesystem.swift; sourceTree = "<group>"; };
 		75F41B2826D39ED30031410C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		75F41B4726D3D8770031410C /* cachedsamples.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cachedsamples.json; sourceTree = "<group>"; };
+		75F41B5026D3DE930031410C /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		78CC755CE3ECF4898D3535CE /* Pods_LBTechTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBTechTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AEA712392047CF491E05E52 /* Pods-LBTechTestApp-LBTechTestAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTechTestApp-LBTechTestAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-LBTechTestApp-LBTechTestAppUITests/Pods-LBTechTestApp-LBTechTestAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2859F119672B66C6CF83EF /* Pods-LBTechTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTechTestAppTests.debug.xcconfig"; path = "Target Support Files/Pods-LBTechTestAppTests/Pods-LBTechTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -480,6 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				75F41B2426D38EB50031410C /* AudioDocument.swift */,
+				75F41B5026D3DE930031410C /* Queue.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -846,6 +849,7 @@
 				75F41AA026D29DC70031410C /* GlobalVariables.swift in Sources */,
 				75F41ABF26D2E7360031410C /* LearningWithSubtitleTableViewCell.swift in Sources */,
 				75F41AC126D2EBA30031410C /* LinkedGroupsViewController.swift in Sources */,
+				75F41B5326D3DE930031410C /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

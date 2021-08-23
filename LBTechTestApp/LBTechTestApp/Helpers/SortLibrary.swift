@@ -39,5 +39,13 @@ public class SortLibrary {
 		
 		return parentList
 	}
-	
+	public static func sortByDiacriticTitleOnly(_ items:[RecallItem]) -> [RecallItem]{
+		
+		let sortedItems = items.sorted(by: { (lhs: RecallItem, rhs: RecallItem) -> Bool in
+			return  lhs.title.forNonDiatricicSorting < rhs.title.forNonDiatricicSorting
+		})
+		
+		
+		return sortedItems
+	}
 }

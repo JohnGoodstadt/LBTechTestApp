@@ -1467,7 +1467,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="navItemToolbar" destination="cbd-R5-EoC" id="PoT-Iu-ufp"/>
-                        <outlet property="playNavButton" destination="8mA-Vx-XId" id="ain-Tt-yS5"/>
+                        <outlet property="playNavButton" destination="8mA-Vx-XId" id="ImI-Pe-ZFP"/>
                         <outlet property="tableview" destination="1HO-VC-OLf" id="ZQf-Qc-YlN"/>
                     </connections>
                 </viewController>
