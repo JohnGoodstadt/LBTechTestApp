@@ -60,7 +60,12 @@ class ViewControllerDataSource: NSObject, UITableViewDataSource,UITableViewDeleg
 			groupType = "groups".branded
 		}else{
 			childCount = rg.itemList.count
+			if childCount == 1 {//singular
+				groupType = "word".branded
+			}
 		}
+		
+		
 		
 		cell.titleLabel.text = "\(childCount) \(groupType)"
 		cell.summaryTitleLabel.text = "\(rg.UID.prefix(4))"
