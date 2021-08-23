@@ -11,7 +11,7 @@ These instruction are for downloading and running the app  `LBTechTest` .
 
 
 2. Run pod install
-	in folder with xcodeproj run POD command `pod install` to install all external dependancies 
+	in folder with xcodeproj run in console POD command `pod install` to install all external dependancies 
 
 
 
