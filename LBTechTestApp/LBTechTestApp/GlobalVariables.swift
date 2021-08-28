@@ -9,7 +9,7 @@
 import Foundation
 import LBEntities
 
-public class GlobalVariables : NSObject{
+public class GlobalVariables {
     
 	
 	public var dataProvider: DataProvider = DataProviderFirebase()

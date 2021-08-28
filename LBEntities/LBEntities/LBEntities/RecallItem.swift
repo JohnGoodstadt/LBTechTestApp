@@ -7,7 +7,7 @@
 
 import Foundation
 
-final public class RecallItem : NSObject,Codable {
+final public class RecallItem : Codable {
 	
 	@objc public var UID:String = UUID().uuidString
 	public var title = "An item title to be altered"
@@ -17,7 +17,7 @@ final public class RecallItem : NSObject,Codable {
 	public var audio:Data = Data() //not read from outside aource - assigned locally
 	
 	//MARK: Initializers
-	override public init() {}
+//	override public init() {}
 
 	private enum CodingKeys: String, CodingKey {
 		case UID = "UID"
@@ -39,7 +39,7 @@ final public class RecallItem : NSObject,Codable {
 		
 		
 	}
-	override public var description: String {
+	public var description: String {
 		return "\(title) UID:\(UID.prefix(4)) thumbnail:\(thumbnail.count)"
 	}
 //	public func copy(with zone: NSZone? = nil) -> Any {

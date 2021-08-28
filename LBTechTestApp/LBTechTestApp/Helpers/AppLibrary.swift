@@ -9,7 +9,7 @@ import Foundation
 import LBEntities
 
 
-@objc public class AppLibrary: NSObject {
+public class AppLibrary {
 	
 	
 	public static func loadJSONInBundleAndProcess() -> (items:[ LBEntities.RecallItem],groups:[LBEntities.RecallGroup]) {

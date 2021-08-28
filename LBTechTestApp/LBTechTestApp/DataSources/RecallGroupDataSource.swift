@@ -16,7 +16,9 @@ protocol RecallGroupDataSourceDelegate {
  
  Requires a group which might have a list of items attached (itemlist), and a delegte for row taps
 */
-class RecallGroupDataSource: NSObject, UITableViewDataSource,UITableViewDelegate {
+class RecallGroupDataSource:NSObject,  UITableViewDataSource,UITableViewDelegate {
+
+	
 
 	private let delegate:RecallGroupDataSourceDelegate
 	private var group:LBEntities.RecallGroup

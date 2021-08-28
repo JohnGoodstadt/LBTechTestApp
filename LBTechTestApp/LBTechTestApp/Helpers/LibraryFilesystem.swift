@@ -9,7 +9,7 @@ import Foundation
 
 let mp3_suffix = "mp3"
 
-@objc public class LibraryFilesystem: NSObject {
+public class LibraryFilesystem {
 
 	//MARK: - file paths
 	public static func getDocumentsDirectory() -> URL {
